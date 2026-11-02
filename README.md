@@ -136,7 +136,7 @@ Self-hosted, developer-friendly, and privacy-respecting search platforms that al
 
 The table below is sorted descending by GitHub stargazers count:
 
-| Repository & Name | GitHub Stars_Badge 🏷️ | Core Tech Stack ⚙️ | License 📜 | Best For 💡 |
+| Repository & Name | GitHub_Stars_Badge 🏷️ | Core Tech Stack ⚙️ | License 📜 | Best For 💡 |
 |:---|:---|:---|:---|:---|
 | **[Firecrawl](https://github.com/mendableai/firecrawl)** | [![Stars](https://img.shields.io/github/stars/mendableai/firecrawl?style=social&color=white)](https://github.com/mendableai/firecrawl/stargazers) | TypeScript / Python | AGPL-3.0 | Web & enterprise documentation web crawler converting messy content into clean Markdown/RAG data |
 | **[RAGFlow](https://github.com/infiniflow/ragflow)** | [![Stars](https://img.shields.io/github/stars/infiniflow/ragflow?style=social&color=white)](https://github.com/infiniflow/ragflow/stargazers) | Python / C++ | Apache 2.0 | Deep document understanding & unified context engine across complex PDFs, slides, and tables |
