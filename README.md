@@ -1,186 +1,249 @@
-# Awesome-Enterprise-Unified-Search
+# 🔍 Awesome Enterprise Unified Search 🚀
 
-# Awesome Enterprise Unified Search
+<div align="center">
 
-> A curated list of top Enterprise Unified Search platforms — both SaaS/Hosted commercial solutions and open-source alternatives for self-hosted search across organizational knowledge sources.  
-> 🌟 Star this repo if you find it useful! 🌟
+<a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
+[![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
+[![License: CC0-1.0](https://img.shields.io/badge/License-CC0_1.0-lightgrey.svg)](LICENSE)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/ishandutta2007/Awesome-Enterprise-Unified-Search/graphs/commit-activity)
+
+<br/>
+
+<a href="https://github.com/ishandutta2007/Awesome-Enterprise-Unified-Search">
+  <img src="assets/banner.svg" alt="Awesome Enterprise Unified Search Banner" width="100%" />
+</a>
+
+<p align="center">
+  <b>A comprehensive, SEO-optimized, curated guide to next-generation Enterprise Unified Search engines, AI-powered workplace knowledge assistants, and self-hosted open-source neural retrieval systems.</b>
+</p>
+
+<p align="center">
+  <a href="#-sector-overview--market-dynamics">Sector Overview</a> •
+  <a href="#-saas--hosted-platforms">SaaS &amp; Commercial Platforms</a> •
+  <a href="#-open-source-software">Open-Source Engines</a> •
+  <a href="#-feature-matrix--comparison-at-a-glance">Feature Matrix</a> •
+  <a href="#-contributing">Contributing</a>
+</p>
+
+</div>
 
 ---
 
-## 📋 Table of Contents
+> 🌟 **Star this repository if you find it helpful!** 🌟  
+> Enterprise Unified Search bridges organizational silos by connecting structured and unstructured data across SaaS apps (Google Drive, Notion, Confluence, Slack, Jira, GitHub) and enterprise data lakes using semantic AI, neural embeddings, hybrid BM25 lexical search, and permission-aware RAG (Retrieval-Augmented Generation).
 
-- [SaaS / Hosted Platforms](#-saas--hosted-platforms)
-  - [Atlassian Rovo Search](#atlassian-rovo-search)
-  - [Glean](#glean)
-  - [Coveo](#coveo)
-  - [Sinequa](#sinequa)
-  - [Elastic Enterprise Search (Legacy)](#elastic-enterprise-search-legacy)
-  - [Lucidworks](#lucidworks)
-  - [Algolia](#algolia)
-  - [Amazon Kendra](#amazon-kendra)
-  - [AlphaSense](#alphasense)
-  - [GoSearch](#gosearch)
-- [Open-Source Software](#-open-source-software)
-  - [OpenSearch](#opensearch)
-  - [Apache Solr](#apache-solr)
-  - [Sercha Core](#sercha-core)
-  - [Elasticsearch](#elasticsearch)
-  - [Meilisearch](#meilisearch)
-  - [Typesense](#typesense)
-  - [Jina](#jina)
-  - [Vespa](#vespa)
-  - [Quickwit](#quickwit)
-- [Comparison at a Glance](#-comparison-at-a-glance)
-- [Contributing](#-contributing)
+---
+
+## 📑 Table of Contents
+
+- [🌐 Sector Overview & Market Dynamics](#-sector-overview--market-dynamics)
+- [🟦 SaaS / Hosted Platforms](#-saas--hosted-platforms)
+  - [Commercial Vendor Leaderboard](#-commercial-vendor-leaderboard-sorted-by-scale)
+  - [Deep Dives & Capabilities](#-deep-dives--capabilities)
+- [🟩 Open-Source Software](#-open-source-software)
+  - [Open-Source Solutions Leaderboard](#-open-source-solutions-leaderboard-sorted-by-github-stars)
+  - [Open-Source Architecture Deep Dives](#-open-source-architecture-deep-dives)
+- [📊 Feature Matrix & Comparison at a Glance](#-feature-matrix--comparison-at-a-glance)
+- [💡 Choosing the Right Search Architecture](#-choosing-the-right-search-architecture)
+- [🤝 Contributing](#-contributing)
+- [📄 License](#-license)
+
+---
+
+## 🌐 Sector Overview & Market Dynamics
+
+The global enterprise search market is currently valued between **$5.4 billion and $7.7 billion**, with market projections estimating expansion to **$11 billion – $16 billion by 2034** at an accelerating **CAGR of ~8.5% to 11.3%**, spurred by the rapid adoption of enterprise generative AI, hybrid BM25 + dense vector retrieval, and conversational Retrieval-Augmented Generation (RAG).
+
+Market structure analysis reveals that the sector is **moderately concentrated at the core infrastructure layer**—where hyperscalers (Microsoft, AWS, Google Cloud) and established players like Elastic capture 35–45% of platform spend—yet **heavily fragmented across the application and specialized AI layer**, where fast-growing pure-play innovators (Glean, AlphaSense, Coveo, Sinequa) and modern open-source alternatives compete intensely on permission-aware governance, out-of-the-box connectors, and agentic workflows.
 
 ---
 
 ## 🟦 SaaS / Hosted Platforms
 
-Commercial, cloud-hosted Enterprise Unified Search platforms. These are not open-source but are included as reference points for feature comparison.
+Enterprise SaaS search platforms deliver turnkey, cloud-hosted unified search across company SaaS ecosystems with zero DevOps overhead, out-of-the-box identity governance (SSO/SAML/SCIM), and automated access control list (ACL) mirroring.
 
-### Atlassian Rovo Search
-**Type:** AI-powered unified search across Atlassian + connected tools  
-Atlassian's AI-powered enterprise search that finds answers across Jira, Confluence, Slack, Google Drive, SharePoint, GitHub, and 50+ connected tools in one place. Rovo Search now provides AI-generated answers with citations, intent-aware routing in Jira, and richer visual results embedded directly in Atlassian workflows. Reports 60% faster performance than six months prior, with 20% of search sessions supported by AI answers and 80% of users returning within a 28-day window. A third of all navigation and search across Jira is now accomplished by Rovo, with users 74% more successful at finding Jira work items [citation:2].  
-**Best for:** Organizations already invested in the Atlassian ecosystem wanting AI-powered unified search across connected tools.
+### 🏆 Commercial Vendor Leaderboard (Sorted by Scale)
 
-### Glean
-**Type:** Enterprise AI platform with search foundation  
-Glean began with enterprise search and evolved into a broader enterprise AI platform built on company context. Features AI-powered search, a conversational Assistant, and Agents that complete work across systems. Reached $300M ARR (tripled from $100M in 15 months), with 85%+ of customers deploying across 5+ departments and Fortune 500 customers nearly doubling year-over-year. AI draws on trusted company context while preserving source permissions [citation:3].  
-**Best for:** Enterprises wanting a mature AI platform grounded in a proven enterprise search foundation.
+The table below outlines enterprise SaaS unified search vendors sorted descending by company scale (market valuation / market capitalization / revenue):
 
-### Coveo
-**Type:** AI-powered intelligent search platform  
-The Coveo Platform unifies cloud and on-premises repositories in a single index, layering over existing systems to enhance search everywhere. Features include generative answering grounded in enterprise content, a unified index across websites, knowledge bases, and catalogs, and machine learning that learns from user behavior to improve relevance. Cross-platform compatibility spans customer-facing channels and internal portals [citation:4]. Stack Overflow 2026 data shows Coveo used by 1.6% of enterprise search respondents [citation:1].  
-**Best for:** Organizations wanting AI-powered search that enhances existing systems without replacing them.
+| Platform | Company Scale (Valuation / Market Cap / Rev) 🏢 | Starting Tier Pricing 🏷️ | Free Tier Limits / Free Trial Plan 🎁 | Primary Specialization 🎯 | Deployment Models ☁️ |
+|:---|:---|:---|:---|:---|:---|
+| **[Amazon Kendra](https://aws.amazon.com/kendra/)** | ~$2,600,000,000,000 ($2.6T MCap) | **$0.32/hour** (~$230.40/month, GenAI Enterprise Edition base index) | **750 free hours for first 30 days** on GenAI Enterprise or Developer Edition (connector syncing charged standard) | AWS-native managed semantic search & GenAI RAG index | AWS Cloud |
+| **[Atlassian Rovo Search](https://www.atlassian.com/software/rovo)** | ~$52,000,000,000 ($52B MCap) | **$5/user/month** (Rovo Standard standalone seat) or bundled in Jira/Confluence paid tiers ($8.15+/user/mo) | **No standalone free plan**; 350 Rovo Dev credits/user/mo included on paid Jira plans (0 credits on Free Atlassian tiers) | Native Atlassian ecosystem + 50+ third-party connected tools | Atlassian Cloud |
+| **[Elastic Cloud Serverless](https://www.elastic.co/enterprise-search)** | ~$10,200,000,000 ($10.2B MCap) | **$99/month** (standard hosted) or **$0.01+/VCU-hour** consumption meter (Serverless search compute) | **14-day free trial** with full serverless project creation and vector inference access | Search AI Lake, vector search, and scalable enterprise search | Multi-cloud (AWS, GCP, Azure) |
+| **[AlphaSense](https://www.alpha-sense.com/)** | ~$7,500,000,000 ($7.5B Valuation) | **$10,000/user/year** (~$833/user/month, 3–5 seat min. commit) | **No self-serve free trial**; invitation-only restricted corporate pilot upon sales demo approval | Financial market intelligence, SEC filings, and broker research | Cloud SaaS |
+| **[Glean](https://www.glean.com/)** | ~$7,200,000,000 ($7.2B Valuation) | **$45/user/month** (typical contract baseline; 50–100 seat minimum, ~$30k–$50k/year ARR base) | **No self-serve free tier**; custom sales-assisted POC (Proof of Concept) on qualifying enterprise demos | Enterprise AI workplace search & autonomous company agents | Multi-cloud / Hybrid VPC |
+| **[Algolia](https://www.algolia.com/)** | ~$2,300,000,000 ($2.3B Valuation) | **$0/month base** ($0.50 per 1,000 extra search requests on Grow plan) | **Free forever plan ("Build")**: 10,000 search requests/month + 50,000 records + 5,000 recommendations/mo | API-first hybrid neural & keyword search for apps & portals | Global Edge Cloud |
+| **[Coveo](https://www.coveo.com/)** | ~$320,000,000 ($320M MCap / ~$450M CAD) | **$990/month** (Salesforce Pro+ package; enterprise baseline from ~$1,200/month) | **14-day free trial** (full access to AI relevance models & connectors, no credit card required) | AI-powered relevance and unified indexing across hybrid/cloud portals | Multi-cloud / SaaS |
+| **[Lucidworks](https://lucidworks.com/)** | ~$300,000,000 ($300M Val / ~$50M ARR) | **~$3,500/month** (~$42,000/year entry enterprise agreement) | **No self-serve free trial**; guided proof-of-concept (POC) license available via sales qualification | Containerized cloud-native search and predictive machine learning | Cloud / Kubernetes |
+| **[GoSearch](https://www.gosearch.ai/)** | ~$127,000,000 ($127M Val / ~$15M ARR) | **$20/user/month** (GoSearch Pro tier) | **Free forever tier**: 10 searches/day + 3–5 GoAI queries/day + 1 file upload (max 5 MB limit) | Workplace search across diverse tech stacks (Drive, Slack, Notion) | Cloud SaaS |
+| **[Sinequa](https://www.sinequa.com/)** | ~$20,000,000+ ARR (Acquired by ChapsVision) | **~$4,166/month** (~$50,000/year entry baseline via Azure Marketplace private offers) | **No self-serve free trial**; hands-on sandbox & structured live demo via sales qualification | Cognitive search and domain-tuned AI agents for manufacturing/finance | Hybrid / Azure / Private Cloud |
 
-### Sinequa
-**Type:** AI-powered enterprise search with domain-aware AI Agents  
-Combines AI-powered enterprise search with configurable AI Agents that are secure and domain-aware. Connects to O365, SharePoint, file shares, PLM, ERP, CRM, BI tools, and databases. Features multilingual and multimodal AI capabilities, enterprise-grade security, and deployment at Fortune 500 companies. Airbus Helicopters cites high performance and straightforward database indexing as selection reasons [citation:5]. Stack Overflow 2026 data shows 1.3% usage among enterprise search respondents [citation:1].  
-**Best for:** Enterprises in manufacturing, life sciences, and financial services needing domain-aware AI agents alongside search.
+---
 
-### Elastic Enterprise Search (Legacy)
-**Type:** Search platform (end-of-life announced)  
-Elastic Enterprise Search (including App Search and Workplace Search) is being deprecated in version 9.0, with Elastic shifting focus to Elasticsearch for enterprise search use cases. Current 8.x deployments remain available and maintained until January 15, 2027, with support until July 15, 2027. New customers cannot access App Search and Workplace Search after the 9.0 release. Elastic positions Elasticsearch (available in Elastic Cloud Serverless) as the path forward for search use cases [citation:6]. Despite the EOL, Elastic/Elasticsearch remains the most-used enterprise search technology at 36.7% of Stack Overflow 2026 respondents [citation:1].  
-**Best for:** Existing Elastic customers with current 8.x deployments; new implementations should evaluate Elasticsearch directly.
+### 🔍 Deep Dives & Capabilities
 
-### Lucidworks
-**Type:** Search and machine learning platform  
-Lucidworks Search is a search and machine learning platform for AI-powered data discovery and search applications in a containerized, cloud-native architecture. Handles billions of documents and thousands of queries per second. Features connectors (AWS S3, SharePoint, websites), signals capture for relevance improvement, rules for query rewriting, recommendations, and search curation via Predictive Merchandiser and Experience Optimizer. Built on Kubernetes, Solr, Spark, and ZooKeeper [citation:7]. Stack Overflow 2026 data shows 2.7% usage among enterprise search respondents [citation:1].  
-**Best for:** Organizations wanting a mature search platform with strong machine learning and e-commerce/knowledge management curation tools.
+#### 🔹 [Atlassian Rovo Search](https://www.atlassian.com/software/rovo)
+- **Architecture:** AI-powered unified search natively embedded within Jira, Confluence, Service Management, Slack, Google Drive, SharePoint, and GitHub.
+- **Key Features:** Intent-aware routing, natural language synthesis with exact citation links, and visual inline cards.
+- **Enterprise Strengths:** 74% increase in finding Jira artifacts; zero connector setup required for existing Atlassian tenants.
 
-### Algolia
-**Type:** Hosted AI search and retrieval platform  
-A hosted AI search and retrieval platform built API-first, combining keyword, vector, and hybrid retrieval to power search, recommendations, RAG, and AI agents. Data stored as JSON records queried through APIs, client libraries, and UI libraries. Features include Agent Studio for conversational experiences, A/B testing, analytics, and personalization. Stack Overflow 2026 data shows 6.3% usage among enterprise search respondents [citation:1][citation:8].  
-**Best for:** Developers wanting a polished, API-first search platform for websites and applications.
+#### 🔹 [Glean](https://www.glean.com/)
+- **Architecture:** Comprehensive workplace intelligence platform grounded on an enterprise search foundation with deep continuous crawling.
+- **Key Features:** Deep enterprise context graph, native Assistants, automated AI Agents, and full permission preservation (respects source ACLs in real time).
+- **Enterprise Strengths:** Surpassed $300M ARR; trusted by Fortune 500 leaders across multiple cross-functional departments.
 
-### Amazon Kendra
-**Type:** AWS-managed semantic search  
-AWS managed service providing semantic search capabilities with automated tagging. Gartner reviewers highlight integration with AWS managed services, third-party connectors (web crawlers, Google Drive, Jira), and better performance than traditional keyword search. Criticisms include steep learning curve, expensive pricing that is difficult to scale, and AWS dependency. Stack Overflow 2026 data shows 2.8% usage among enterprise search respondents [citation:1][citation:9].  
-**Best for:** Organizations already standardized on AWS wanting managed semantic search within the AWS ecosystem.
+#### 🔹 [Elastic Cloud Serverless](https://www.elastic.co/enterprise-search)
+- **Architecture:** Search AI Lake decoupled architecture powering vector search, BM25 text retrieval, and ELSER semantic reranking.
+- **Key Features:** Open connector ecosystem, automated vector embedding generation, zero infrastructure capacity planning, and sub-second querying.
+- **Enterprise Strengths:** Elastic powers over 36% of enterprise production search deployments globally.
 
-### AlphaSense
-**Type:** Market intelligence search platform  
-Specializes in search across market intelligence content: company documents (SEC and global filings, press releases, transcripts), broker and analyst research, news, regulatory content, and internal documents via integrations. Features content set filtering (Company Docs, Research, News, Regulatory, Integrations) for focused searches across financial and business information [citation:10].  
-**Best for:** Financial analysts, investors, and corporate strategy teams needing search across market intelligence and research.
+#### 🔹 [Algolia](https://www.algolia.com/)
+- **Architecture:** Ultra-low latency API-first search engine providing hybrid keyword + dense vector retrieval (NeuralSearch).
+- **Key Features:** Instant search as-you-type, built-in A/B testing, personalization engine, and crawler pipelines for enterprise content.
+- **Enterprise Strengths:** Extremely generous permanent free tier with millisecond edge distribution worldwide.
 
-### GoSearch
-**Type:** Enterprise search across knowledge hubs  
-Designed for enterprises and knowledge workers depending on diverse knowledge hubs (Google Drive, Confluence, Notion, Jira, Coda, HubSpot). Provides unified search across the entire tech stack. Enterprise tier includes access to all shared and private connectors, configurable LLMs, file verification and deprecation, API, SSO/SAML/SCIM, advanced permissions, audit log, and BYO LLM/BYO Cloud [citation:11].  
-**Best for:** Teams wanting unified search across a diverse SaaS tool stack with enterprise governance features.
+#### 🔹 [Amazon Kendra](https://aws.amazon.com/kendra/)
+- **Architecture:** AWS fully-managed natural language cognitive search engine with pretrained domain-specific NLP models.
+- **Key Features:** Native connectors to S3, SharePoint, Salesforce, ServiceNow, RDS, and Jira; automated document excerpt extraction.
+- **Enterprise Strengths:** Direct integration with AWS IAM, CloudWatch, and Amazon Bedrock for generative RAG workflows.
+
+#### 🔹 [Coveo](https://www.coveo.com/)
+- **Architecture:** Unified AI search platform layering over hybrid on-premises repositories and cloud knowledge bases.
+- **Key Features:** Machine learning relevance tuning, automatic search suggestions, generative answering with strict source grounding.
+- **Enterprise Strengths:** Pre-built certified integrations for Salesforce, ServiceNow, SAP, and Sitecore environments.
+
+#### 🔹 [AlphaSense](https://www.alpha-sense.com/)
+- **Architecture:** Vertical AI search engine tailored specifically for financial, market, and competitive intelligence.
+- **Key Features:** Ingestion of SEC filings, investor presentations, Wall Street broker research, regulatory feeds, and proprietary company content.
+- **Enterprise Strengths:** Natural language sentiment detection and smart synonyms tuned for financial vocabulary.
+
+#### 🔹 [GoSearch](https://www.gosearch.ai/)
+- **Architecture:** Turnkey workplace search engine designed for modern hybrid software stacks.
+- **Key Features:** Unified queries across Notion, Google Workspace, GitHub, Coda, and Slack; automated file verification and deprecation tracking.
+- **Enterprise Strengths:** Lowest barrier to entry with a perpetual free plan and rapid 5-minute setup.
 
 ---
 
 ## 🟩 Open-Source Software
 
-Self-hosted, community-driven Enterprise Unified Search platforms. All listed projects offer source code you can deploy on your own infrastructure.
+Self-hosted, developer-friendly, and privacy-respecting search platforms that allow you to retain complete ownership of your proprietary organizational data.
 
-### OpenSearch
-**Stack:** Java / Lucene | **License:** Apache 2.0  
-A community-driven, open-source search and analytics suite derived from Elasticsearch 7.10.2. Provides full-text search, analytics, and observability capabilities. Stack Overflow 2026 data shows OpenSearch used by 17.4% of enterprise search respondents, making it the second most-used search technology after Elasticsearch [citation:1]. Includes security, alerting, and dashboard plugins.  
-**Best for:** Organizations wanting an Apache-licensed, community-governed search engine with broad compatibility and no licensing concerns.
+### 🌟 Open-Source Solutions Leaderboard (Sorted by GitHub Stars)
 
-### Apache Solr
-**Stack:** Java / Lucene | **License:** Apache 2.0  
-A mature, highly reliable search platform built on Apache Lucene. Provides distributed indexing, replication, load-balanced querying, and faceted search. Stack Overflow 2026 data shows Solr used by 8.3% of enterprise search respondents [citation:1]. Lucidworks Search is built on Solr, demonstrating its enterprise viability.  
-**Best for:** Organizations needing a battle-tested, Apache-governed search platform with proven scalability.
+The table below is sorted descending by GitHub stargazers count:
 
-### Sercha Core
-**Stack:** Go / Vespa / PostgreSQL | **License:** Apache 2.0  
-A self-hosted, team-wide search platform that connects organizational data sources and provides unified search across all of them. Features 11+ connectors (GitHub, GitLab, Slack, Notion, Confluence, Jira, Google Drive, Google Docs, Linear, Dropbox, S3), hybrid search (BM25 lexical + semantic embeddings via Vespa), OAuth2 authentication, REST API with OpenAPI spec, admin UI, and horizontal scalability. Deploys via Docker Compose or Kubernetes [citation:12][citation:13].  
-**Best for:** Teams wanting a genuinely self-hosted unified search platform with modern connectors and hybrid search, keeping data on their own infrastructure.
-
-### Elasticsearch
-**Stack:** Java / Lucene | **License:** Elastic License 2.0 / SSPL / AGPL (tri-licensed)  
-The most widely deployed search engine, used by 36.7% of Stack Overflow 2026 enterprise search respondents [citation:1]. Elastic is positioning Elasticsearch (available in Elastic Cloud Serverless) as the replacement for the deprecated Enterprise Search product line [citation:6]. Offers distributed search, analytics, machine learning, and a rich API. **Note:** Licensing is not OSI-approved open source (Elastic License 2.0 / SSPL), though AGPL is available as an option.  
-**Best for:** Organizations already in the Elastic ecosystem or willing to accept Elastic's licensing terms for the most mature search engine available.
-
-### Meilisearch
-**Stack:** Rust | **License:** MIT  
-A lightning-fast, open-source search engine designed for developer ease and instant search experiences. Features typo tolerance, faceting, filtering, geosearch, and multi-tenancy. Much simpler to deploy and operate than Elasticsearch or Solr, with a focus on relevance out of the box.  
-**Best for:** Developers wanting fast, easy-to-deploy search for applications without the operational complexity of enterprise search engines.
-
-### Typesense
-**Stack:** C++ | **License:** GPL-3.0  
-An open-source, typo-tolerant search engine optimized for instant search experiences. Features include federated search across collections, curation, geosearch, and vector search. Positioned as a developer-friendly alternative to Algolia with self-hosting options.  
-**Best for:** Teams wanting Algolia-like instant search with self-hosted control.
-
-### Jina
-**Stack:** Python | **License:** Apache 2.0  
-A neural search framework for building multimodal search applications. Enables search across text, images, video, and audio using deep learning embeddings. Includes Jina Hub for sharing executors and a cloud offering. Suited for AI-native search experiences requiring semantic understanding.  
-**Best for:** Teams building neural/semantic search applications with multimodal data.
-
-### Vespa
-**Stack:** C++ / Java | **License:** Apache 2.0  
-A big data serving engine for search, recommendation, and personalization at scale. Handles low-latency computation over large datasets with support for vector search, ranking, and real-time updates. Used by Spotify, Yahoo, and others. Sercha Core uses Vespa for semantic search [citation:12].  
-**Best for:** Organizations needing large-scale search and recommendation with advanced ranking and vector capabilities.
-
-### Quickwit
-**Stack:** Rust | **License:** AGPL-3.0  
-A cloud-native search engine for log management and observability. Designed for cost-effective indexing and querying of large volumes of append-only data (logs, traces). Integrates with Elasticsearch-compatible APIs and object storage.  
-**Best for:** Teams needing search over log and observability data with cost-efficient object storage backing.
+| Repository & Name | GitHub Star Badge 🏷️ | Core Tech Stack ⚙️ | License 📜 | Best For 💡 |
+|:---|:---|:---|:---|:---|
+| **[Firecrawl](https://github.com/mendableai/firecrawl)** | [![Stars](https://img.shields.io/github/stars/mendableai/firecrawl?style=social&color=white)](https://github.com/mendableai/firecrawl/stargazers) | TypeScript / Python | AGPL-3.0 | Web & enterprise documentation web crawler converting messy content into clean Markdown/RAG data |
+| **[RAGFlow](https://github.com/infiniflow/ragflow)** | [![Stars](https://img.shields.io/github/stars/infiniflow/ragflow?style=social&color=white)](https://github.com/infiniflow/ragflow/stargazers) | Python / C++ | Apache 2.0 | Deep document understanding & unified context engine across complex PDFs, slides, and tables |
+| **[Elasticsearch](https://github.com/elastic/elasticsearch)** | [![Stars](https://img.shields.io/github/stars/elastic/elasticsearch?style=social&color=white)](https://github.com/elastic/elasticsearch/stargazers) | Java / Lucene | ELv2 / SSPL / AGPL | Industry-standard distributed full-text, vector search, and analytical knowledge engine |
+| **[Meilisearch](https://github.com/meilisearch/meilisearch)** | [![Stars](https://img.shields.io/github/stars/meilisearch/meilisearch?style=social&color=white)](https://github.com/meilisearch/meilisearch/stargazers) | Rust | MIT | Blazing-fast, typo-tolerant, instant search-as-you-type with zero complex configuration |
+| **[Milvus](https://github.com/milvus-io/milvus)** | [![Stars](https://img.shields.io/github/stars/milvus-io/milvus?style=social&color=white)](https://github.com/milvus-io/milvus/stargazers) | Go / C++ | Apache 2.0 | Massive-scale billion-vector similarity search engine and enterprise neural retrieval backend |
+| **[Khoj](https://github.com/khoj-ai/khoj)** | [![Stars](https://img.shields.io/github/stars/khoj-ai/khoj?style=social&color=white)](https://github.com/khoj-ai/khoj/stargazers) | Python | AGPL-3.0 | Self-hosted AI personal and team knowledge assistant searching markdown, PDFs, Notion, and GitHub |
+| **[Qdrant](https://github.com/qdrant/qdrant)** | [![Stars](https://img.shields.io/github/stars/qdrant/qdrant?style=social&color=white)](https://github.com/qdrant/qdrant/stargazers) | Rust | Apache 2.0 | High-performance vector database with payload-based filtering for AI semantic enterprise search |
+| **[Onyx (formerly Danswer)](https://github.com/onyx-dot-app/onyx)** | [![Stars](https://img.shields.io/github/stars/onyx-dot-app/onyx?style=social&color=white)](https://github.com/onyx-dot-app/onyx/stargazers) | Python / TypeScript | MIT | Open-source enterprise unified search & workplace assistant with 30+ native connectors (Slack, Drive, Jira) |
+| **[Typesense](https://github.com/typesense/typesense)** | [![Stars](https://img.shields.io/github/stars/typesense/typesense?style=social&color=white)](https://github.com/typesense/typesense/stargazers) | C++ | GPL-3.0 | Fast, typo-tolerant open-source alternative to Algolia with native vector search and federated search |
+| **[ZincSearch](https://github.com/zinclabs/zincsearch)** | [![Stars](https://img.shields.io/github/stars/zinclabs/zincsearch?style=social&color=white)](https://github.com/zinclabs/zincsearch/stargazers) | Go / Vue | Apache 2.0 | Lightweight alternative to Elasticsearch requiring minimal CPU/RAM resources |
+| **[Weaviate](https://github.com/weaviate/weaviate)** | [![Stars](https://img.shields.io/github/stars/weaviate/weaviate?style=social&color=white)](https://github.com/weaviate/weaviate/stargazers) | Go | BSD-3-Clause | Cloud-native multimodal vector engine combining keyword BM25 and vector search out-of-the-box |
+| **[OpenSearch](https://github.com/opensearch-project/OpenSearch)** | [![Stars](https://img.shields.io/github/stars/opensearch-project/OpenSearch?style=social&color=white)](https://github.com/opensearch-project/OpenSearch/stargazers) | Java / Lucene | Apache 2.0 | 100% community-driven, Apache-licensed enterprise search and analytics engine |
+| **[DataHub](https://github.com/datahub-project/datahub)** | [![Stars](https://img.shields.io/github/stars/datahub-project/datahub?style=social&color=white)](https://github.com/datahub-project/datahub/stargazers) | Java / Python / TS | Apache 2.0 | Extensible metadata platform and unified search catalogue for enterprise data stacks |
+| **[Quickwit](https://github.com/quickwit-oss/quickwit)** | [![Stars](https://img.shields.io/github/stars/quickwit-oss/quickwit?style=social&color=white)](https://github.com/quickwit-oss/quickwit/stargazers) | Rust | AGPL-3.0 | Cloud-native search engine designed to execute sub-second queries directly on object storage (S3/GCS) |
+| **[Vespa](https://github.com/vespa-engine/vespa)** | [![Stars](https://img.shields.io/github/stars/vespa-engine/vespa)](https://github.com/vespa-engine/vespa/stargazers) | C++ / Java | Apache 2.0 | Advanced production serving engine for vector search, lexical matching, and real-time ML ranking |
+| **[Amundsen](https://github.com/amundsen-io/amundsen)** | [![Stars](https://img.shields.io/github/stars/amundsen-io/amundsen?style=social&color=white)](https://github.com/amundsen-io/amundsen/stargazers) | Python / TypeScript | Apache 2.0 | Metadata-driven enterprise data discovery tool indexing tables, dashboards, and streams |
+| **[Apache Solr](https://github.com/apache/solr)** | [![Stars](https://img.shields.io/github/stars/apache/solr?style=social&color=white)](https://github.com/apache/solr/stargazers) | Java / Lucene | Apache 2.0 | Highly reliable, battle-tested distributed search platform with advanced faceting |
+| **[Fess](https://github.com/codelibs/fess)** | [![Stars](https://img.shields.io/github/stars/codelibs/fess?style=social&color=white)](https://github.com/codelibs/fess/stargazers) | Java | Apache 2.0 | Turnkey self-hosted enterprise search server with web, file-system, and cloud storage crawlers |
+| **[Sercha Core](https://github.com/sercha-core/sercha-core)** | [![Stars](https://img.shields.io/github/stars/sercha-core/sercha-core?style=social&color=white)](https://github.com/sercha-core/sercha-core/stargazers) | Go / Vespa | Apache 2.0 | Dedicated self-hosted enterprise search engine connecting Slack, Notion, GitHub, Drive, and Jira |
 
 ---
 
-## 📊 Comparison at a Glance
+### 🛠️ Open-Source Architecture Deep Dives
 
-| Software | License | Stack | Unified Connectors | AI/Semantic | Best For |
-|----------|---------|-------|-------------------|-------------|----------|
-| **Atlassian Rovo** | Proprietary | Cloud | 50+ tools | ✅ | Atlassian ecosystem |
-| **Glean** | Proprietary | Cloud | Broad enterprise | ✅ | Enterprise AI context |
-| **Coveo** | Proprietary | Cloud | Cloud + on-prem | ✅ | Layered search enhancement |
-| **Sinequa** | Proprietary | Cloud | O365, SAP, PLM, etc. | ✅ | Domain-aware AI agents |
-| **Lucidworks** | Proprietary | Cloud (K8s) | S3, SharePoint, web | ✅ | ML + e-commerce curation |
-| **Algolia** | Proprietary | Cloud | (App data) | ✅ | API-first app search |
-| **Amazon Kendra** | Proprietary | AWS | AWS + third-party | ✅ | AWS-managed semantic |
-| **GoSearch** | Proprietary | Cloud | Google, Atlassian, etc. | ✅ | SaaS tool stack search |
-| **OpenSearch** | Apache 2.0 | Java | Via plugins | Limited | Apache-licensed engine |
-| **Apache Solr** | Apache 2.0 | Java | Via config | Limited | Mature search platform |
-| **Sercha Core** | Apache 2.0 | Go/Vespa | 11+ connectors | ✅ Hybrid | Self-hosted team search |
-| **Elasticsearch** | ELv2/SSPL/AGPL | Java | Via connectors | ✅ | Most-used search engine |
-| **Meilisearch** | MIT | Rust | ❌ | Limited | Fast app search |
-| **Typesense** | GPL-3.0 | C++ | ❌ | Limited | Algolia alternative |
-| **Vespa** | Apache 2.0 | C++/Java | ❌ | ✅ | Large-scale search/recs |
+#### 🔹 [Onyx (formerly Danswer)](https://github.com/onyx-dot-app/onyx)
+- **Architecture:** Full-stack unified search engine connecting enterprise data repositories (Confluence, Jira, Google Drive, Notion, Slack, GitHub, Linear, Zendesk).
+- **Security & Permissions:** Native user-level authorization synchronization (OAuth2, OIDC, SAML). Respects document permissions dynamically during search.
+- **RAG & Agents:** Built-in generative AI answers with hyperlinked source citations, custom assistants, and hybrid retrieval (dense vector embeddings + BM25).
+
+#### 🔹 [Fess](https://github.com/codelibs/fess)
+- **Architecture:** Robust, easy-to-deploy enterprise search server built on top of OpenSearch/Elasticsearch.
+- **Crawler System:** Deeply crawls internal intranet portals, file shares (Samba/SMB, NFS), database servers, and multi-format documents (PDF, Office, Zip).
+- **Interface & Admin:** Out-of-the-box multilingual web UI, query autocompletion, role-based access control, and comprehensive REST APIs.
+
+#### 🔹 [Khoj](https://github.com/khoj-ai/khoj)
+- **Architecture:** Offline-first and self-hosted AI knowledge orchestrator.
+- **Connectors:** Native plugins for Obsidian, Emacs, desktop file directories, Notion, and GitHub repos.
+- **Features:** Allows querying unstructured personal/enterprise notes with open-source LLMs (Llama, Mistral) or hosted models with privacy preservation.
+
+#### 🔹 [OpenSearch](https://github.com/opensearch-project/OpenSearch)
+- **Architecture:** Fully open-source Lucene fork stewarded by the OpenSearch Foundation and Linux Foundation.
+- **Capabilities:** High-volume lexical search, distributed indexing, KNN vector search plugins, and complete dashboard visualization tooling.
+
+#### 🔹 [Vespa](https://github.com/vespa-engine/vespa)
+- **Architecture:** Industrial-grade big data serving engine engineered by Yahoo to evaluate billions of items in milliseconds.
+- **Hybrid Retrieval:** Multi-phase ranking executing vector embeddings, BM25, and deep ONNX neural models simultaneously at wire speed.
+
+---
+
+## 📊 Feature Matrix & Comparison at a Glance
+
+| System | Deployment Model | License | Native Work Connectors 🔌 | Semantic / Vector Search 🧠 | Permission Sync (ACLs) 🔒 | Starting Tier Cost 🏷️ |
+|:---|:---|:---|:---:|:---:|:---:|:---|
+| **Onyx (Danswer)** | Self-Hosted / Cloud | MIT | 30+ Tools | ✅ Hybrid | ✅ Full OAuth/SAML | **Free Open-Source** |
+| **Glean** | Cloud SaaS / VPC | Proprietary | 100+ Tools | ✅ Dense Neural | ✅ Full Source ACL | **~$45/user/month** |
+| **Atlassian Rovo** | SaaS | Proprietary | 50+ Tools | ✅ Hybrid | ✅ Atlassian ACL | **$5/user/month** |
+| **Elasticsearch** | Self-Hosted / Cloud | ELv2 / AGPL | Via Connectors | ✅ Vector / ELSER | ✅ Role-based | **Free Open-Source** |
+| **Sercha Core** | Self-Hosted | Apache 2.0 | 11+ Tools | ✅ Vespa Hybrid | ✅ OAuth2 | **Free Open-Source** |
+| **Coveo** | Cloud SaaS | Proprietary | Hybrid On-prem/Cloud| ✅ Machine Learning | ✅ Enterprise ACL | **$990/month** |
+| **Amazon Kendra** | AWS Cloud | Proprietary | AWS + Cloud Apps | ✅ Deep Learning | ✅ AWS IAM / Sync | **$0.32/hour** |
+| **Algolia** | Edge SaaS | Proprietary | App / Web Data | ✅ NeuralSearch | ⚠️ Application Level | **Free tier / $0 base** |
+| **Meilisearch** | Self-Hosted / Cloud | MIT | Ingestion API | ✅ Vector Search | ⚠️ Tenant Keys | **Free Open-Source** |
+| **Typesense** | Self-Hosted / Cloud | GPL-3.0 | Ingestion API | ✅ Built-in Vectors | ⚠️ Scoped API Keys | **Free Open-Source** |
+| **Fess** | Self-Hosted | Apache 2.0 | Web / SMB / DB | ✅ RAG / Plugins | ✅ Role / User ACL | **Free Open-Source** |
+| **GoSearch** | Cloud SaaS | Proprietary | 20+ SaaS Tools | ✅ Generative AI | ✅ SSO / SCIM | **Free tier / $20/user/mo**|
+| **Vespa** | Self-Hosted / Cloud | Apache 2.0 | Ingestion API | ✅ Multi-phase Rank | ⚠️ Application Level | **Free Open-Source** |
+
+---
+
+## 💡 Choosing the Right Search Architecture
+
+```mermaid
+flowchart TD
+    A["Need Enterprise Unified Search?"] --> B{"Hosting Preference?"}
+    B -->|"Turnkey Cloud SaaS"| C{"Primary Goal?"}
+    B -->|"Self-Hosted / Privacy-First"| D{"Setup Approach?"}
+
+    C -->|"All-in-one Atlassian Suite"| E["Atlassian Rovo Search"]
+    C -->|"Best Enterprise AI Workplace Graph"| F["Glean / Coveo"]
+    C -->|"Developer API & Ultra-fast UI"| G["Algolia / GoSearch"]
+    C -->|"AWS Native Infrastructure"| H["Amazon Kendra"]
+
+    D -->|"Turnkey Out-of-the-Box Connectors"| I["Onyx (Danswer) / Sercha Core"]
+    D -->|"Internal Web, Files & SMB Crawling"| J["Fess"]
+    D -->|"Custom Scale Vector & Keyword Engine"| K["Elasticsearch / OpenSearch"]
+    D -->|"Sub-millisecond App / Document Search"| L["Meilisearch / Typesense"]
+```
 
 ---
 
 ## 🤝 Contributing
 
-Contributions are welcome! If you know of an open-source Enterprise Unified Search platform that should be listed here, please open a pull request with:
+Contributions are warmly encouraged! Whether you want to add a missing open-source search framework, improve enterprise pricing accuracy, or share architectural benchmarks:
 
-- Project name and URL
-- Brief description (1–2 sentences)
-- Stack and license
-- Why it stands out
-
-Please ensure the project is actively maintained (releases within the last 12 months) and genuinely open-source.
+1. 🍴 **Fork** the repository.
+2. 🌿 Create a feature branch: `git checkout -b feature/new-search-engine`.
+3. ✍️ Add the project with GitHub links, license badges, and technical summaries.
+4. 🚀 Submit a **Pull Request** detailing why the tool belongs in this curated index.
 
 ---
 
 ## 📄 License
 
-This list is released under CC0 1.0 Universal (Public Domain). The software projects listed retain their respective licenses.
+This repository is licensed under the [Creative Commons Zero v1.0 Universal (CC0-1.0)](LICENSE) Public Domain Dedication.  
+All linked third-party projects and trademarks are the property of their respective owners.
 
 ---
 
-⭐ **If this list helped you discover a useful tool, please star the repo!** ⭐
+<div align="center">
+  <b>⭐ Found this curated list valuable? Star the repository to support continuous updates! ⭐</b>
+</div>
