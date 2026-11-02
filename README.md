@@ -6,7 +6,7 @@
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 [![License: CC0-1.0](https://img.shields.io/badge/License-CC0_1.0-lightgrey.svg)](LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
-[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/ishandutta2007/Awesome-Enterprise-Unified-Search/graphs/commit-activity)
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/ishandutta2007/Awesome-Enterprise-Unified-Search/graphs/commit-activity)<a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
 
 <br/>
 
@@ -46,6 +46,8 @@
   - [Open-Source Architecture Deep Dives](#-open-source-architecture-deep-dives)
 - [📊 Feature Matrix & Comparison at a Glance](#-feature-matrix--comparison-at-a-glance)
 - [💡 Choosing the Right Search Architecture](#-choosing-the-right-search-architecture)
+- [💖 Support & Sponsorship](#-support--sponsorship)
+- [⭐ Star History](#-star-history)
 - [🤝 Contributing](#-contributing)
 - [📄 License](#-license)
 
@@ -234,6 +236,25 @@ Contributions are warmly encouraged! Whether you want to add a missing open-sour
 2. 🌿 Create a feature branch: `git checkout -b feature/new-search-engine`.
 3. ✍️ Add the project with GitHub links, license badges, and technical summaries.
 4. 🚀 Submit a **Pull Request** detailing why the tool belongs in this curated index.
+
+---
+
+## 💖 Support & Sponsorship
+
+Thank you so much for taking the time to explore this curated enterprise search resource! Keeping this directory up-to-date with emerging models, pricing shifts, and architectural advancements takes continuous research.
+
+If you find this repository valuable, please consider supporting the project:
+- ⭐ **Star** this repository on GitHub to boost visibility.
+- 🍴 **Fork** and share it with your team, colleagues, or engineering network.
+- ☕ **Buy me a coffee / Sponsor:** If this guide has saved you research hours or helped your team make key architectural decisions, support continued maintenance via the [GitHub Sponsors Dashboard](https://github.com/sponsors/ishandutta2007).
+
+[![Sponsor ishandutta2007](https://img.shields.io/badge/Sponsor-%E2%9D%A4-ea4aaa?style=for-the-badge&logo=githubsponsors&logoColor=white)](https://github.com/sponsors/ishandutta2007)
+
+---
+
+## ⭐ Star History
+
+[![Star History Chart](https://star-history.dera.page/svg?repos=ishandutta2007/Awesome-Enterprise-Unified-Search&type=date&legend=top-left)](https://star-history.dera.page/#ishandutta2007/Awesome-Enterprise-Unified-Search&type=date&legend=top-left)
 
 ---
 
