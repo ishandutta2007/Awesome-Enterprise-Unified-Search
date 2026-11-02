@@ -1,195 +1,79 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="100%" height="360" style="background:#0b0f19;border-radius:12px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;">
+<svg width="800" height="250" viewBox="0 0 800 250" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <!-- Background Gradients -->
-    <linearGradient id="skyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0f172a" />
-      <stop offset="50%" stop-color="#020617" />
-      <stop offset="100%" stop-color="#1e1035" />
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#020617;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#0f172a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1e1b4b;stop-opacity:1" />
     </linearGradient>
-
-    <linearGradient id="neonPulse" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.9" />
-      <stop offset="50%" stop-color="#818cf8" stop-opacity="0.9" />
-      <stop offset="100%" stop-color="#c084fc" stop-opacity="0.9" />
+    <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#38bdf8;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#818cf8;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#c084fc;stop-opacity:1" />
     </linearGradient>
-
-    <linearGradient id="cardGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#1e293b" stop-opacity="0.75" />
-      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.75" />
-    </linearGradient>
-
-    <!-- Glow Filter -->
-    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="6" result="blur" />
-      <feComposite in="SourceGraphic" in2="blur" operator="over" />
-    </filter>
-
-    <filter id="subtleGlow" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="3" result="blur" />
-      <feComposite in="SourceGraphic" in2="blur" operator="over" />
-    </filter>
-
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#38bdf8;stop-opacity:0.18" />
+      <stop offset="100%" style="stop-color:#38bdf8;stop-opacity:0" />
+    </radialGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="white" stroke-opacity="0.04" stroke-width="1"/>
+    </pattern>
     <style>
-      .beacon-ring {
-        animation: pulseRing 4s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
-        transform-origin: 600px 75px;
+      @keyframes pulse {
+        0%, 100% { transform: scale(1); opacity: 0.8; }
+        50% { transform: scale(1.05); opacity: 1; }
       }
-      .beacon-ring-2 {
-        animation: pulseRing 4s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
-        animation-delay: 2s;
-        transform-origin: 600px 75px;
+      @keyframes float {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(-5px); }
       }
-      .node-pulse {
-        animation: floatNode 6s ease-in-out infinite alternate;
+      @keyframes twinkle {
+        0%, 100% { opacity: 0.3; transform: scale(1); }
+        50% { opacity: 1; transform: scale(1.5); }
       }
-      .node-pulse-reverse {
-        animation: floatNodeRev 7s ease-in-out infinite alternate;
+      .title-text {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        font-size: 38px;
+        font-weight: 900;
+        letter-spacing: -0.5px;
+        text-anchor: middle;
+        animation: float 4s ease-in-out infinite;
+        transform-origin: center;
       }
-      .flow-beam {
-        stroke-dasharray: 8 16;
-        animation: flowDash 3s linear infinite;
+      .subtitle-text {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        font-size: 17px;
+        font-weight: 500;
+        fill: #94a3b8;
+        text-anchor: middle;
+        animation: float 4s ease-in-out infinite;
+        animation-delay: 0.5s;
+        transform-origin: center;
       }
-      .flow-beam-rev {
-        stroke-dasharray: 8 16;
-        animation: flowDashRev 3.5s linear infinite;
+      .animated-circle {
+        animation: twinkle 3s infinite ease-in-out;
+        transform-origin: center;
       }
-      .tag-pill {
-        transition: transform 0.3s ease;
-      }
-      .tag-pill:hover {
-        transform: translateY(-2px);
-      }
-      
-      @keyframes pulseRing {
-        0% { r: 18px; opacity: 0.8; stroke-width: 2px; }
-        80% { r: 75px; opacity: 0; stroke-width: 1px; }
-        100% { r: 75px; opacity: 0; }
-      }
-      @keyframes floatNode {
-        0% { transform: translateY(0px) translateX(0px); }
-        50% { transform: translateY(-6px) translateX(3px); }
-        100% { transform: translateY(4px) translateX(-3px); }
-      }
-      @keyframes floatNodeRev {
-        0% { transform: translateY(0px) translateX(0px); }
-        50% { transform: translateY(6px) translateX(-4px); }
-        100% { transform: translateY(-4px) translateX(4px); }
-      }
-      @keyframes flowDash {
-        to { stroke-dashoffset: -48; }
-      }
-      @keyframes flowDashRev {
-        to { stroke-dashoffset: 48; }
+      .bar-glow {
+        animation: pulse 3s infinite ease-in-out;
+        transform-origin: center;
       }
     </style>
   </defs>
-
-  <!-- Background Base -->
-  <rect width="1200" height="360" fill="url(#skyGrad)" rx="12" />
-
-  <!-- Animated Background Network / Data Streams -->
-  <g opacity="0.35">
-    <!-- Grid Overlay -->
-    <path d="M 0 60 L 1200 60 M 0 120 L 1200 120 M 0 180 L 1200 180 M 0 240 L 1200 240 M 0 300 L 1200 300" stroke="#334155" stroke-width="0.7" stroke-dasharray="4 8" />
-    <path d="M 150 0 L 150 360 M 300 0 L 300 360 M 450 0 L 450 360 M 600 0 L 600 360 M 750 0 L 750 360 M 900 0 L 900 360 M 1050 0 L 1050 360" stroke="#334155" stroke-width="0.7" stroke-dasharray="4 8" />
-  </g>
-
-  <!-- Dynamic Knowledge Flow Lines (Background Layers) -->
+  <rect width="800" height="250" fill="url(#bgGrad)" />
+  <rect width="800" height="250" fill="url(#grid)" />
+  <circle cx="400" cy="125" r="300" fill="url(#glow)" />
+  
   <g>
-    <!-- Left to Center streams -->
-    <path d="M 80 80 Q 320 40 580 75" fill="none" stroke="#38bdf8" stroke-width="1.8" class="flow-beam" opacity="0.6" />
-    <path d="M 120 280 Q 360 220 580 85" fill="none" stroke="#818cf8" stroke-width="1.8" class="flow-beam-rev" opacity="0.5" />
-    <!-- Right to Center streams -->
-    <path d="M 1120 80 Q 880 30 620 75" fill="none" stroke="#c084fc" stroke-width="1.8" class="flow-beam-rev" opacity="0.6" />
-    <path d="M 1080 290 Q 840 230 620 85" fill="none" stroke="#38bdf8" stroke-width="1.8" class="flow-beam" opacity="0.5" />
+    <text x="400" y="105" class="title-text" fill="url(#textGrad)">ENTERPRISE UNIFIED SEARCH</text>
+    <text x="400" y="152" class="subtitle-text">Curated AI Search Engines, RAG Systems &amp; Knowledge Hubs</text>
   </g>
-
-  <!-- Animated Background Floating Nodes -->
-  <g class="node-pulse">
-    <!-- Slack/Chat Node -->
-    <rect x="80" y="55" width="130" height="42" rx="8" fill="url(#cardGrad1)" stroke="#38bdf8" stroke-width="1" stroke-opacity="0.4" />
-    <circle cx="102" cy="76" r="6" fill="#38bdf8" />
-    <text x="118" y="80" fill="#94a3b8" font-size="12" font-weight="600">Slack &amp; Teams</text>
-  </g>
-
-  <g class="node-pulse-reverse">
-    <!-- Docs / Confluence Node -->
-    <rect x="90" y="250" width="145" height="42" rx="8" fill="url(#cardGrad1)" stroke="#818cf8" stroke-width="1" stroke-opacity="0.4" />
-    <circle cx="112" cy="271" r="6" fill="#818cf8" />
-    <text x="128" y="275" fill="#94a3b8" font-size="12" font-weight="600">Drive &amp; Notion</text>
-  </g>
-
-  <g class="node-pulse-reverse">
-    <!-- Jira / Code Node -->
-    <rect x="980" y="55" width="140" height="42" rx="8" fill="url(#cardGrad1)" stroke="#c084fc" stroke-width="1" stroke-opacity="0.4" />
-    <circle cx="1002" cy="76" r="6" fill="#c084fc" />
-    <text x="1018" y="80" fill="#94a3b8" font-size="12" font-weight="600">GitHub &amp; Jira</text>
-  </g>
-
-  <g class="node-pulse">
-    <!-- Enterprise DB / Lake Node -->
-    <rect x="970" y="250" width="150" height="42" rx="8" fill="url(#cardGrad1)" stroke="#38bdf8" stroke-width="1" stroke-opacity="0.4" />
-    <circle cx="992" cy="271" r="6" fill="#38bdf8" />
-    <text x="1008" y="275" fill="#94a3b8" font-size="12" font-weight="600">Data &amp; Warehouses</text>
-  </g>
-
-  <!-- Central Search Beacon Rings (behind Title) -->
-  <circle cx="600" cy="75" class="beacon-ring" fill="none" stroke="#38bdf8" />
-  <circle cx="600" cy="75" class="beacon-ring-2" fill="none" stroke="#818cf8" />
-  <circle cx="600" cy="75" r="8" fill="#38bdf8" filter="url(#glow)" />
-
-  <!-- FOREGROUND: Main Title & Subtitle (Always Clear and Unobstructed) -->
-  <g text-anchor="middle">
-    <!-- Search Icon Glow -->
-    <path d="M 590 65 L 596 71 A 14 14 0 1 0 606 61 A 14 14 0 0 0 590 65 M 604 75 L 612 83" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" opacity="0.9" />
-
-    <!-- Main Title -->
-    <text x="600" y="150" fill="#ffffff" font-size="40" font-weight="800" letter-spacing="-0.5" filter="url(#subtleGlow)">
-      Awesome Enterprise Unified Search
-    </text>
-    
-    <!-- Gradient Highlight Accent Underline -->
-    <rect x="360" y="165" width="480" height="3" rx="1.5" fill="url(#neonPulse)" />
-
-    <!-- Subtitle -->
-    <text x="600" y="202" fill="#cbd5e1" font-size="17" font-weight="400" letter-spacing="0.2">
-      Curated Index of AI-Powered Cognitive Search Engines, Work AI &amp; Open-Source RAG Knowledge Hubs
-    </text>
-
-    <!-- Category Feature Badges / Interactive Pills in Foreground -->
-    <g transform="translate(600, 246)">
-      <!-- Pill 1: Hybrid BM25 & Vector -->
-      <g transform="translate(-330, 0)">
-        <rect x="0" y="0" width="150" height="32" rx="16" fill="#1e293b" stroke="#38bdf8" stroke-width="1.2" opacity="0.95" />
-        <circle cx="16" cy="16" r="4" fill="#38bdf8" />
-        <text x="82" y="20" fill="#f8fafc" font-size="12" font-weight="600" text-anchor="middle">⚡ Hybrid Search</text>
-      </g>
-
-      <!-- Pill 2: Neural & GenAI RAG -->
-      <g transform="translate(-160, 0)">
-        <rect x="0" y="0" width="145" height="32" rx="16" fill="#1e293b" stroke="#818cf8" stroke-width="1.2" opacity="0.95" />
-        <circle cx="16" cy="16" r="4" fill="#818cf8" />
-        <text x="80" y="20" fill="#f8fafc" font-size="12" font-weight="600" text-anchor="middle">🧠 GenAI &amp; RAG</text>
-      </g>
-
-      <!-- Pill 3: Enterprise Connectors -->
-      <g transform="translate(5, 0)">
-        <rect x="0" y="0" width="165" height="32" rx="16" fill="#1e293b" stroke="#a855f7" stroke-width="1.2" opacity="0.95" />
-        <circle cx="16" cy="16" r="4" fill="#a855f7" />
-        <text x="90" y="20" fill="#f8fafc" font-size="12" font-weight="600" text-anchor="middle">🔌 50+ Connectors</text>
-      </g>
-
-      <!-- Pill 4: Open Source & Self-Hosted -->
-      <g transform="translate(185, 0)">
-        <rect x="0" y="0" width="150" height="32" rx="16" fill="#1e293b" stroke="#10b981" stroke-width="1.2" opacity="0.95" />
-        <circle cx="16" cy="16" r="4" fill="#10b981" />
-        <text x="82" y="20" fill="#f8fafc" font-size="12" font-weight="600" text-anchor="middle">🔓 100% Self-Hosted</text>
-      </g>
-    </g>
-
-    <!-- Bottom Metadata / Highlights -->
-    <text x="600" y="320" fill="#64748b" font-size="12" font-weight="500">
-      Enterprise SaaS &bull; Self-Hosted Open-Source &bull; Permission-Aware Retrieval &bull; Real-Time Indexing
-    </text>
-  </g>
+  
+  <rect class="bar-glow" x="260" y="180" width="280" height="4" rx="2" fill="url(#textGrad)" fill-opacity="0.85" />
+  
+  <circle class="animated-circle" cx="70" cy="55" r="3" fill="#38bdf8" style="animation-delay: 0s;" />
+  <circle class="animated-circle" cx="730" cy="195" r="3.5" fill="#c084fc" style="animation-delay: 0.8s;" />
+  <circle class="animated-circle" cx="110" cy="210" r="2.5" fill="#818cf8" style="animation-delay: 1.5s;" />
+  <circle class="animated-circle" cx="690" cy="65" r="3" fill="#38bdf8" style="animation-delay: 2.2s;" />
+  <circle class="animated-circle" cx="190" cy="75" r="2" fill="#c084fc" style="animation-delay: 1.1s;" />
+  <circle class="animated-circle" cx="620" cy="215" r="2.5" fill="#38bdf8" style="animation-delay: 1.7s;" />
 </svg>
