@@ -132,11 +132,11 @@ The table below outlines enterprise SaaS unified search vendors sorted descendin
 
 Self-hosted, developer-friendly, and privacy-respecting search platforms that allow you to retain complete ownership of your proprietary organizational data.
 
-### 🌟 Open-Source Solutions Leaderboard (Sorted by GitHub Stars)
+### 🌟 Open-Source Solutions Leaderboard (Sorted by GitHub_Stars)
 
 The table below is sorted descending by GitHub stargazers count:
 
-| Repository & Name | GitHub Star Badge 🏷️ | Core Tech Stack ⚙️ | License 📜 | Best For 💡 |
+| Repository & Name | GitHub Stars_Badge 🏷️ | Core Tech Stack ⚙️ | License 📜 | Best For 💡 |
 |:---|:---|:---|:---|:---|
 | **[Firecrawl](https://github.com/mendableai/firecrawl)** | [![Stars](https://img.shields.io/github/stars/mendableai/firecrawl?style=social&color=white)](https://github.com/mendableai/firecrawl/stargazers) | TypeScript / Python | AGPL-3.0 | Web & enterprise documentation web crawler converting messy content into clean Markdown/RAG data |
 | **[RAGFlow](https://github.com/infiniflow/ragflow)** | [![Stars](https://img.shields.io/github/stars/infiniflow/ragflow?style=social&color=white)](https://github.com/infiniflow/ragflow/stargazers) | Python / C++ | Apache 2.0 | Deep document understanding & unified context engine across complex PDFs, slides, and tables |
